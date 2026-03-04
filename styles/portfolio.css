@@ -20,13 +20,19 @@
     border: none;
     border-radius: 5px;
     padding: 18px 35px;
+    cursor: pointer;
 }
 
 /*Main styles*/
-header{
-    background-color: #faba8c;
+
+header{   /* Very Important: On how to have multiple background images along with background color. The order of background images and background color is important. The first image will be on top of the second image, and the second image will be on top of the background color. So, if you want to have a background color that is visible, you need to place it at the end of the background property. */
+    /* background-color: #ffecde; */
     padding-top: 50px;
+    background: url("../images/developer.png") , url("../images/header_bg.png") , #ffecde;
+    background-repeat: no-repeat;
+    background-position: left center , right bottom;
 }
+/*Navbar styles*/
 nav{
     width: 59%;
     border: 2px solid black;
@@ -50,4 +56,49 @@ nav{
     text-decoration: none;
     font-size: 20px;
     color: #474747;
+}
+/*Banner styles*/
+#banner{
+    border: 2px solid black;
+    margin: 46px 38px 0 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-content{
+    max-width: 585px;
+}
+.banner-content h2{
+    font-size: 45px;
+    font-weight: 600;
+    color: #474747;
+    margin-bottom: 5px;
+}
+.banner-content h1{
+    font-size: 85px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+.banner-content p{
+    font-size: 18px;
+    color: #757575;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.contact-btn{
+    background-color: white;
+    color: #FD6E0A;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #FD6E0A;
+    border-radius: 5px;
+    padding: 18px 35px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.banner-img img{
+    max-width: 585px;
+    vertical-align: middle; /* Ensure the image is vertically aligned with the text, vertical-align aligns inline, inline-block & table-cell elements vertically relative to their parent.  It is essential for aligning icons, images, and text within containers, or for positioning text within table cells. */
 }
