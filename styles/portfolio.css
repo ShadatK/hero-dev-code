@@ -24,6 +24,7 @@
 }
 .section-text{
     max-width: 827px;
+    margin: 0 auto;
 }
 .section-text h2{
     font-size: 35px;
@@ -144,4 +145,39 @@ nav{
     font-size: 20px;
     font-weight: bold;
     line-height: 30px;
+}
+/* What I Do styles */
+#skills{
+    margin-top: 130px;
+}
+.skills-container{
+    border: 2px solid black;
+    width: 59%;
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+}
+.skill-cards{
+    display: flex;
+    gap: 24px;
+}
+.cards{
+    border: 1px solid black;
+    max-width: 267px;
+    padding: 30px;
+    box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.15);
+}
+.cards img{
+    max-width: 44px;
+    margin-bottom: 30px;
+}
+.cards h4{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.cards p{
+    font-size: 16px;
+    color: #757575;
+    line-height: 28px;
 }
