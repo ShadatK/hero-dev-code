@@ -37,7 +37,9 @@
     color: #757575;
     margin-bottom: 30px;
 }
-
+.text-center{
+    text-align: center;
+}
 /*Main styles*/
 
 header{   /* Very Important: On how to have multiple background images along with background color. The order of background images and background color is important. The first image will be on top of the second image, and the second image will be on top of the background color. So, if you want to have a background color that is visible, you need to place it at the end of the background property. */
@@ -45,12 +47,12 @@ header{   /* Very Important: On how to have multiple background images along wit
     padding-top: 50px;
     background: url("../images/developer.png") , url("../images/header_bg.png") , #ffecde;
     background-repeat: no-repeat;
-    background-position: left center , right bottom;
+    background-position: 23px 38px , right bottom;
 }
 /*Navbar styles*/
 nav{
     width: 59%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     max-width: 1140px;
     margin: 0 auto;
     display: flex;
@@ -74,7 +76,7 @@ nav{
 }
 /*Banner styles*/
 #banner{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin: 46px 38px 0 230px;
     display: flex;
     justify-content: space-between;
@@ -120,11 +122,11 @@ nav{
 /* Main styles */
 /* About styles */
 #about{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin-top: 130px;
 }
 .about-container{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     background-color: #ffecde;
     width: 59%;
     max-width: 1140px;
@@ -151,7 +153,7 @@ nav{
     margin-top: 130px;
 }
 .skills-container{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 59%;
     max-width: 1140px;
     margin: 0 auto;
@@ -186,7 +188,7 @@ nav{
     margin-top: 130px;
 }
 .resume-container{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 59%;
     max-width: 1140px;
     margin: 0 auto;
@@ -230,17 +232,19 @@ nav{
 }
 .resume-container button{
     margin-top: 50px;
+    text-align: center;
 }
 /* Footer styles */
 footer{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     background-color: #ffecde;
+    margin-top: 130px;
+    padding: 130px 0;
 }
 .footer-container{
     width: 59%;
     max-width: 1140px;
-    margin: 130px auto;
-    padding: 50px 0;
+    margin: 0 auto;
     display: flex;
     gap: 117px;
 }
@@ -259,8 +263,7 @@ footer{
 .form input[type='text'], .form input[type='email'], .form textarea{
     border: none;
     border-radius: 5px;
-    max-width: 460px;
-    width: 100%;
+    width: 460px;
     padding: 18px 30px;
     margin-bottom: 24px;
     color: #757575;
