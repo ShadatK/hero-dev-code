@@ -40,8 +40,7 @@
 .text-center{
     text-align: center;
 }
-/*Main styles*/
-
+/*Header styles*/
 header{   /* Very Important: On how to have multiple background images along with background color. The order of background images and background color is important. The first image will be on top of the second image, and the second image will be on top of the background color. So, if you want to have a background color that is visible, you need to place it at the end of the background property. */
     /* background-color: #ffecde; */
     padding-top: 50px;
@@ -51,8 +50,8 @@ header{   /* Very Important: On how to have multiple background images along wit
 }
 /*Navbar styles*/
 nav{
-    width: 59%;
     /* border: 2px solid black; */
+    width: 59%;
     max-width: 1140px;
     margin: 0 auto;
     display: flex;
@@ -117,6 +116,7 @@ nav{
 
 .banner-img img{
     max-width: 585px;
+    max-height: 676px;
     vertical-align: middle; /* Ensure the image is vertically aligned with the text, vertical-align aligns inline, inline-block & table-cell elements vertically relative to their parent.  It is essential for aligning icons, images, and text within containers, or for positioning text within table cells. */
 }
 /* Main styles */
@@ -128,6 +128,7 @@ nav{
 .about-container{
     /* border: 2px solid black; */
     background-color: #ffecde;
+    border-radius: 10px;
     width: 59%;
     max-width: 1140px;
     margin: 0 auto;
@@ -164,7 +165,8 @@ nav{
     gap: 24px;
 }
 .cards{
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.301);
+    border-radius: 5px;
     max-width: 267px;
     padding: 30px;
     box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.15);
